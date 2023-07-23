@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #eef5db;">
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+             <a href=""><img src="all in one..png" alt="" width="120px" height="50px"></a>
+         </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#categories">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Register</a></li>
+                </ul>
+            </nav>
+           <a href=""> <img src="cart.png" alt="" width="30px" height="30px"></a>
+           <img src="Images/menu.png" alt="" class="menu" onclick="menutoggle()">
+        </div>
+    </div>
+    </div>
+
+    <!------------single product details------->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col5">
+                <img src="Images/plant1.1.jpg" alt="" width="100%" id="productimg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="Images/plant1.jpg" alt="" width="100%" class="smallimg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Images/plant1.32.jpg" alt="" width="100%" class="smallimg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="Images/plant1.3.jpg" alt="" width="100%" class="smallimg">
+                    </div>
+                </div>
+            </div>
+            <div class="col5">
+                <h1>Jade Plant</h1>
+                <h4>₹349</h4>
+                Quantity&nbsp;&nbsp;<input type="number" value="1"><br>
+                <a href="addtocart.html" class="btn">Add to cart</a>&nbsp;&nbsp;&nbsp;<a href="payment.html" class="btn">Buy now</a>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="categories" id="categories">
+        <div class="small-container">
+            <h2 class="title">Related Products</h2>
+            <div class="row">
+                <div class="col3">
+                    <img src="Images/plant1.jpg" alt="" class="plant">
+                    <h4>Jade Plant</h4>
+                    <div class="rating">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star half.png" alt="">
+                    </div>
+                    <p>₹349</p>
+                </div>
+                <div class="col3">
+                    <img src="Images/plant2.jpg" alt="" class="plant">
+                    <h4>Jasmine Plant</h4>
+                    <div class="rating">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star half.png" alt="">
+                    </div>
+                    <p>₹249</p>
+                </div>
+                <div class="col3">
+                    <img src="Images/plant3.jpg" alt="" class="plant">
+                    <h4>Lily Plant</h4>
+                    <div class="rating">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star blank.png" alt="">
+                    </div>
+                    <p>₹249</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var menuitems =document.getElementById("menuitems");
+        menuitems.style.maxHeight="0px";
+        function menutoggle(){
+            if(menuitems.style.maxHeight=="0px"){
+                menuitems.style.maxHeight="200px";
+            }
+            else{
+                menuitems.style.maxHeight="0px";
+            }
+        }
+    </script>
+
+    <script>
+        var productimg =document.getElementById("productimg");
+        var smallimg= document.getElementsByClassName("smallimg");
+
+        smallimg[0].onclick = function(){
+            productimg.src=smallimg[0].src
+        }
+        smallimg[1].onclick = function(){
+            productimg.src=smallimg[1].src
+        }
+        smallimg[2].onclick = function(){
+            productimg.src=smallimg[2].src
+        }
+    </script>
+
+</body>
+</html>

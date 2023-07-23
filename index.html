@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All in One | Shopping website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #eef5db;">
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+             <a href="index.html"><img src="all in one..png" alt="" width="120px" height="50px"></a>
+         </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#categories">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="register.html">Register</a></li>
+                </ul>
+            </nav>
+           <a href=""> <img src="cart.png" alt="" width="30px" height="30px"></a>
+           <img src="Images/menu.png" alt="" class="menu" onclick="menutoggle()">
+        </div>
+        <div class="row">
+            <div class="col1">
+                <h1>The Best time to plant a tree was 20 years ago. <br> The Second Best time is NOW!!</h1>
+                <a href="" class="btn">Let's Plant</a>
+            </div>
+            <div class="col2">
+                <img src="Header plant.jpg" alt="" class="headerplant"> 
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!------------Featured categories-------->
+    <div class="categories" >
+        <div class="small-container" id="categories">
+            <h2 class="title" >Products</h2>
+            <div class="row">
+                <div class="col3">
+                   <a href="products details.html"> <img src="Images/plant1.jpg" alt="" class="plant"></a>
+                    <h4>Jade Plant</h4>
+                    <div class="rating">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star half.png" alt="">
+                    </div>
+                    <p>₹349</p>
+                </div>
+                <div class="col3">
+                    <img src="Images/plant2.jpg" alt="" class="plant">
+                    <h4>Jasmine Plant</h4>
+                    <div class="rating">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star half.png" alt="">
+                    </div>
+                    <p>₹249</p>
+                </div>
+                <div class="col3">
+                    <img src="Images/plant3.jpg" alt="" class="plant">
+                    <h4>Lily Plant</h4>
+                    <div class="rating">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star.png" alt="">
+                        <img src="Images/star blank.png" alt="">
+                    </div>
+                    <p>₹249</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----offer------>
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col4">
+                    <img src="Images/roses.jpg" alt="">
+                </div>
+                <div class="col5">
+                    <p>Exclusively Available on Greenery</p><br>
+                    <h1>Roses with Pot</h1><br>
+                    <small>This set of has differnt types of roses also comes with the 
+                        luxurious white marble pot. The soil is impoted from the Best Frams.
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var menuitems =document.getElementById("menuitems");
+        menuitems.style.maxHeight="0px";
+        function menutoggle(){
+            if(menuitems.style.maxHeight=="0px"){
+                menuitems.style.maxHeight="200px";
+            }
+            else{
+                menuitems.style.maxHeight="0px";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #eef5db;">
+    <div class="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+             <a href=""><img src="all in one..png" alt="" width="120px" height="50px"></a>
+         </div>
+            <nav>
+                <ul id="menuitems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Register</a></li>
+                </ul>
+            </nav>
+           <a href=""> <img src="cart.png" alt="" width="30px" height="30px"></a>
+           <img src="Images/menu.png" alt="" class="menu" onclick="menutoggle()">
+        </div>
+    </div>
+    </div>
+
+<div class="small-container cartpage">
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>
+                <div class="cartinfo">
+                    <img src="Images/plant1.jpg" alt="">
+                    <div>
+                        <p>Jade plant</p>
+                        <small>Price : ₹349</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹349</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cartinfo">
+                    <img src="Images/plant2.jpg" alt="">
+                    <div>
+                        <p>Jasmine plant</p>
+                        <small>Price : ₹249</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹249</td>
+        </tr>
+        <tr>
+            <td>
+                <div class="cartinfo">
+                    <img src="Images/plant3.jpg" alt="">
+                    <div>
+                        <p>Lily plant</p>
+                        <small>Price : ₹249</small>
+                        <br>
+                        <a href="">Remove</a>
+                    </div>
+                </div>
+            </td>
+            <td><input type="number" value="1"></td>
+            <td>₹249</td>
+        </tr>
+    </table>
+    <div class="total-price">
+        <table>
+            <tr>
+                <td>Subtotal</td>
+                <td>₹1000</td>
+            </tr>
+            <tr>
+                <td>Tax</td>
+                <td>₹50</td>
+            </tr>
+            <tr>
+                <td>Total</td>
+                <td>₹1050</td>
+            </tr>
+            <tr>
+                <td><a href="payment.html" class="btn">Pay</a></td>
+                
+            </tr>
+        </table>
+        <br>
+    </div>
+   
+    
+</div>
+
+
+   
+
+    <script>
+        var menuitems =document.getElementById("menuitems");
+        menuitems.style.maxHeight="0px";
+        function menutoggle(){
+            if(menuitems.style.maxHeight=="0px"){
+                menuitems.style.maxHeight="200px";
+            }
+            else{
+                menuitems.style.maxHeight="0px";
+            }
+        }
+    </script>
+
+   
+
+</body>
+</html>
